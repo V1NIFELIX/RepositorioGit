@@ -51,12 +51,12 @@ export default class Repository extends Component {
     const { repository, issues, loading } = this.state;
 
     if(loading){
-      return <Loading>Carregando</Loading>
+      return <Loading>Renderizando</Loading>
     }
     return (
      <Container>
        <Owner>
-         <Link to="/"> Voltar aos Repositorios</Link>
+         <Link to="/"> Voltar as Repositórios</Link>
          <img src={repository.owner.avatar_url} alt={repository.owner.login}/>
          <h1>{repository.name}</h1>
          <p>{repository.description}</p>
